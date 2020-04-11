@@ -120,7 +120,7 @@ a:hover {
 #wrapper {
   width: 100%;
   height: 100vh;
-  background: url('src/img/bgi.jpg') no-repeat 50% 50%;
+  background: url('../src/img/bgi.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 #sticky {
