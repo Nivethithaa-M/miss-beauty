@@ -16,6 +16,36 @@ body {
   top: 0px;
 }
 #navbar {
+  /*this will fix the navbar at the left*/
+  overflow: hidden;
+  background-color: #333;
+    position:fixed;
+  /*avoid overlay the content*/
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+  /*avoid overlay the content*/
+    border-bottom:white solid;
+}
+#navbar a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 23px;
+}
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    
+}
+#navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+#navbar {
   background-color: black;
   width: 1000px;
   height: 60px;
@@ -174,6 +204,7 @@ a:hover {
   color: white;
   font-weight: 700;
   position: relative;
+  margin-top: 0px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -230,24 +261,24 @@ a:hover {
   font-size: 17px;
   font-family: monospace;
 }
+
 #offers {
   background: #ce70bb;
 }
-section#offers h2,
-#offers p {
-  color: #0b111f;
+section#offers h2, #offers p {
+    color: #0b111f;
 }
 #offers .card {
-  width: 100% !important;
-  margin-bottom: 30px;
-  border-radius: 0px;
-  border: none;
-  transition: 0.4s;
+    width: 100% !important;
+    margin-bottom: 30px;
+    border-radius: 0px;
+    border: none;
+    transition: 0.4s;
 }
 #offers .card:hover {
-  position: relative;
-  top: -5px;
-  transition: 0.4s;
+    position: relative;
+    top: -5px;
+    transition: 0.4s;
 }
 #offers .box {
   padding: 40px;
@@ -271,11 +302,11 @@ section#offers h2,
   padding: 15px;
 }
 .card-title {
-  /* margin-bottom: .75rem; */
-  text-align: center;
-  color: #0b111f;
-  font-weight: bold;
-  margin-bottom: 0;
+    /* margin-bottom: .75rem; */
+    text-align: center;
+    color: #0b111f;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 #offers .box .icon i {
   color: #444;
@@ -328,8 +359,7 @@ section#offers h2,
     text-align: center;
     padding-bottom: 15px;
   }
-  #offers .box h4,
-  #offers .box p {
+  #offers .box h4, #offers .box p {
     margin-left: 0;
     text-align: center;
   }
