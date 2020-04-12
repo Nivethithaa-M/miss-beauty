@@ -10,66 +10,12 @@ body {
   float: left;
   border-radius: 50px;
 }
-.hiddendiv {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-}
-.menu {
-  margin-top: 14px;
-}
 .container {
   width: 100%;
   max-width: fit-content;
   margin: 0 auto;
 }
-#navbar {
-  /*this will fix the navbar at the left*/
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  /*avoid overlay the content*/
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2000;
-  /*avoid overlay the content*/
-  border-bottom: white solid;
-}
-#navbar a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 25px;
-  text-decoration: none;
-  font-size: 23px;
-}
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-#navbar a.active {
-  background-color: #4caf50;
-  color: white;
-}
-#navbar {
-  background-color: black;
-  width: 1000px;
-  height: 60px;
-  margin: 0 auto;
-  padding: 4px;
-}
-#navbar ul li {
-  float: left;
-  font-size: 23px;
-  list-style-type: none;
-  margin-left: 28px;
-}
 
-#navbar ul li a {
-  color: white;
-  text-decoration: none;
-}
 body {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: lighter;
@@ -113,7 +59,7 @@ li {
   display: inline;
 }
 
-a {
+.menu a {
   outline: none;
   text-decoration: none;
   display: inline-block;
@@ -121,14 +67,15 @@ a {
   margin-right: 0.625%;
   text-align: center;
   line-height: 3;
-  color: black;
+  color: white;
 }
-a:link {
+.menu a:link {
   background: transparent;
 }
 
-a:hover {
+.menu a:hover {
   background: crimson;
+  text-decoration: none;
 }
 @media (max-width: 786px) {
   .logo {
@@ -176,7 +123,7 @@ a:hover {
 
 .logo {
   float: left;
-  margin: 16px 46px;
+  margin: 10px;
 }
 .content {
   width: 94%;
