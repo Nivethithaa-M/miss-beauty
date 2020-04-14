@@ -1,12 +1,9 @@
-window.onscroll = function() {myFunction()};
+const totop = document.querySelector(".to-top");
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+window.addEventListener("scroll", ( ) => {
+	if(window.pageYOffset > 100) {
+		totop.classList.add("active");
+	} else {
+		totop.classList.remove("active");
+	}
 }
